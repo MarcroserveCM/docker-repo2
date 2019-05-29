@@ -3,7 +3,7 @@ SUDO: required
 services:
   - docker
 before_instal:
-  - docker build -t marcroservecm/docker-repo1 -f Dockerfile.dev .
+  - docker build -t marcroservecm/docker-repo2 -f Dockerfile.dev .
 
 script:
-  - docker run marcroservecm/docker-repo1 npm run test -- --coverage
+  - docker run marcroservecm/docker-repo2 npm run test -- --coverage
